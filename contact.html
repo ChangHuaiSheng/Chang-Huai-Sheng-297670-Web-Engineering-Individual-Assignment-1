@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - E-Portfolio</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <style>
+        body {
+          background: linear-gradient(180deg, #f0f9ff, #e0f7fa);
+          color: #333;
+        }
+        header.bg-light {
+          background: linear-gradient(to right, #a1c4fd, #c2e9fb) !important;
+          color: #003366;
+          font-weight: 600;
+        }
+        h1, h2, h3, .navbar-brand {
+          font-weight: 600;
+        }
+        .navbar {
+          background: linear-gradient(to right, #2193b0, #6dd5ed);
+        }
+        .navbar-brand, .nav-link {
+          color: #ffffff !important;
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+        }
+        .btn-primary {
+          background-color: #007bff;
+          border-color: #007bff;
+          border-radius: 6px;
+          padding: 0.5rem 1.5rem;
+        }
+        .btn-primary:hover {
+          background-color: #0056b3;
+          border-color: #004085;
+        }
+        form input, form textarea {
+          margin-bottom: 1rem;
+          border-radius: 6px;
+          padding: 0.75rem;
+          border: 1px solid #ccc;
+          font-size: 1rem;
+          width: 100%;
+          box-sizing: border-box;
+        }
+        form textarea {
+          resize: vertical;
+        }
+        form button {
+          width: 100%;
+        }
+        .contact-info p {
+          font-size: 1.1rem;
+        }
+        .contact-info a {
+          color: #007bff;
+          text-decoration: none;
+        }
+        .contact-info a:hover {
+          text-decoration: underline;
+        }
+        main.container {
+          max-width: 600px;
+        }
+      </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">E-Portfolio</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="lifestyle.html">Lifestyle</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="bg-light py-5 text-center">
+      <div class="container">
+        <h1 class="display-4">Get in Touch</h1>
+        <p class="lead">I'd love to hear from you. Drop a message or find me on social media.</p>
+      </div>
+    </header>
+    <main class="container py-5">
+      <section class="contact-info mb-5">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> <a href="mailto:changhuaisheng77@email.com">changhuaisheng77@email.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+60164049759">+6016-404-9759</a></p>
+        <p>Follow me: 
+          <a href="https://www.youtube.com/@changhuaisheng3754" target="_blank" rel="noopener noreferrer">YouTube</a> | 
+          <a href="https://github.com/ChangHuaiSheng" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+      </section>
+      <section>
+        <h3>Send a Message</h3>
+        <form onsubmit="event.preventDefault(); alert('Message sent!');">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
